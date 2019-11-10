@@ -5,6 +5,6 @@ def key_for_min_value(name_hash)
   if name_hash = {}
     return nil
   else
-      name_hash.each.collect { |key, value| value.min return key }
+      name_hash.each.collect { |key, value| value.min key }
     end
 end
