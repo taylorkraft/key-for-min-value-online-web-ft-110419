@@ -8,8 +8,8 @@ def key_for_min_value(name_hash)
       min_value = name_hash.first[1]
       min_key = name_hash.first[0]
       name_hash.each.collect { |key, value|
-        if value < min_value
-          min_value
+        if key.length < min_value
+          min_key
         end
       }
       min_key
